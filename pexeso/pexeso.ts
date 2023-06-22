@@ -123,7 +123,6 @@ class Hra {
             this.hratZnovu();
         });
 
-        this.naplnJmenaHracu();
         this.zacitHru();
     }
 
@@ -218,21 +217,9 @@ class Hra {
         this.vytvorScore();
         this.zamichejKarty();
         this.rozdejKarty();
-        this.naplnJmenaHracu();
         this.vypisViteze();
     }
 
-    naplnJmenaHracu(): void {
-        this.aktualniHrac = "hrac1";
-        if (this.aktualniHrac === "hrac1" && this.scoreSpan1 && this.scoreSpan2) {
-            this.scoreSpan1.style.fontWeight = "bold";
-            this.scoreSpan2.style.fontWeight = "normal";
-        }
-        if (this.hrac1jmeno === null) {
-            this.hrac1jmeno = prompt("Zadej jméno prvního hráče");
-            this.hrac2jmeno = prompt("Zadej jméno druhého hráče");
-        }
-    }
 }
 
 new Hra();
