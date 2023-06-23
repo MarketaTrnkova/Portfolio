@@ -53,16 +53,18 @@
   margin-right: 8px;
 }
 .hrac2{
-  background-color: var(--hrac2MainColor); 
+  background-color: var(--hrac2LightColor); 
   border-radius: 999px;
   margin-left: 8px;
 }
 .aktivniHrac1{
+font-weight: bold;
  background-color: var(--hrac1LightColor);
  border: 8px solid var(--hrac1BorderColor);
  box-shadow: 1px 1px 8px 5px var(--hrac1MainColor);
 }
 .aktivniHrac2{
+  font-weight: bold;
   background-color: var(--hrac2LightColor);
   border: 8px solid var(--hrac2BorderColor);
   box-shadow: 1px 1px 8px 5px var(--hrac2MainColor);
@@ -85,15 +87,16 @@
 #hraci-pole{
     display: grid;
     width: 95vw;
-    height: auto;
+    min-height: 90vh;
     padding: 0;
 
     margin: 0.5rem auto;
     grid-template-columns:  23vw 23vw 23vw 23vw;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto ;
     gap: 0.5rem;
     justify-content: center;
-    align-items: center;
+    justify-items: center;
+    align-content: center;
 }
 
 .karty{
@@ -184,10 +187,12 @@
       display: grid;
       width: auto;
       height: auto;
+      min-height: none;
       margin: 5vh auto;
       grid-template-columns: auto auto auto auto;
-      grid-template-rows: auto 19vh 19vh 19vh 19vh;
+      grid-template-rows: 19vh 19vh 19vh 19vh;
       gap: 0.2rem;
+      align-content:start ;
   }
 /*   #hrac1{
     grid-column: 1/2;
