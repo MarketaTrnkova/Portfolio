@@ -6,8 +6,8 @@ class Karta {
     imgId: number;
     otocena: boolean;
     hra: Hra;
-    test1?: string;
-
+    test?: string;
+    
     constructor(img: HTMLImageElement, hra: Hra) {
         this.predniStranaSrc = '';
         this.zadniStranaSrc = 'img/zadni-strana.png';
