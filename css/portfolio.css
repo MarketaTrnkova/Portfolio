@@ -408,6 +408,10 @@ main {
   background-position-y: center;
   background-attachment: fixed;
 }
+.odkaz-na-projekt{
+  color: var(--tertiary-body-color);
+  text-decoration: none;
+}
 
 /************************** SKILLS **************************/
 .skills_container {
@@ -445,13 +449,18 @@ main {
   background-size: cover;
   background-attachment: fixed;
   margin: 0 auto;
+  padding-bottom: 3%;
 }
 
-#skills_ikons_1 {
+.img-wrapper img, .img-wrapper-edit {
   width: 80%;
   margin: 0px auto;
 }
 
+.img-wrapper-edit{
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
 .adobe_products {
   display: flex;
   justify-content: center;
